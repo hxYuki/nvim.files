@@ -14,3 +14,5 @@ opt.shiftwidth = 4
 opt.encoding = "utf-8"
 
 opt.clipboard = ""
+
+vim.commentstring = "//%s"
