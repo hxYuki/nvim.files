@@ -15,4 +15,4 @@ opt.encoding = "utf-8"
 
 opt.clipboard = ""
 
-vim.commentstring = "//%s"
+-- vim.commentstring = "//%s"

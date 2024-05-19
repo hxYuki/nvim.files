@@ -7,14 +7,14 @@ return {
       -- Configuration here, or leave empty to use defaults
       keymaps = {
         normal = "sa",
-        normal_cur = "sas",
-        normal_line = "saS",
-        normal_cur_line = "sass",
-        visual = "a",
+        normal_cur = "sac",
+        normal_line = "sal",
+        normal_cur_line = "sacl",
+        visual = "sa",
         visual_line = "ga",
         delete = "sd",
         change = "sc",
-        change_line = "scs",
+        change_line = "scl",
       },
     })
   end,
