@@ -9,10 +9,12 @@ map({ "n", "v" }, "Y", '"*Y')
 map({ "n" }, "p", '"*p')
 map({ "n" }, "P", '"*P')
 
+map({ "n", "v" }, "d", '"_d')
+map({ "n", "v" }, "c", '"_c')
 map({ "n", "v" }, "<M-d>", '"*d')
+map({ "n", "v" }, "<M-c>", '"*c', { remap = false })
 
 map({ "n", "v" }, "<C-a>", "ggVG")
-
 map({ "n", "x", "o" }, "f", function()
   require("flash").jump()
 end, { desc = "Flash" })
