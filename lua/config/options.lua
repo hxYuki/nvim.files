@@ -3,4 +3,4 @@
 -- Add any additional options here
 
 -- Set default intergrated shell
-vim.o.shell = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+vim.o.shell = '"c:\\program files\\powershell\\7\\pwsh.exe"'

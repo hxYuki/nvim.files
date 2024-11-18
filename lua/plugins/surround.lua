@@ -1,15 +1,16 @@
-vim.keymap.set({ "n", "v" }, "s", "<nop>")
+-- vim.keymap.set({ "n", "v" }, "s", "<nop>")
 
 return {
   "echasnovski/mini.surround",
   opts = {
     mappings = {
-      add = "sa", -- Add surrounding in Normal and Visual modes
-      delete = "sd", -- Delete surrounding
-      find = "sf", -- Find surrounding (to the right)
-      find_left = "sF", -- Find surrounding (to the left)
-      highlight = "sh", -- Highlight surrounding
-      replace = "sr", -- Replace surrounding
+      add = "ssa", -- Add surrounding in Normal and Visual modes
+      delese = "ssd", -- Delete surrounding
+      find = "ssf", -- Find surrounding (to the right)
+      find_left = "ssF", -- Find surrounding (to the left)
+      highlight = "ssh", -- Highlight surrounding
+      replace = "ssr", -- Replace surrounding
+      update_n_lines = "ssn",
     },
   },
 }
