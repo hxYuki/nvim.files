@@ -13,6 +13,17 @@
 --   commentary_integration = {},
 -- })
 
+-- require("nvim-treesitter.configs").setup({
+--   incremental_selection = {
+--     enable = true,
+--     keymaps = {
+--       -- init_selection = "gv",
+--       node_incremental = "v",
+--       node_decremental = "V",
+--     },
+--   },
+-- })
+
 return {
   "JoosepAlviste/nvim-ts-context-commentstring",
   lazy = true,

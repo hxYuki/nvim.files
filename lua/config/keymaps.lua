@@ -6,8 +6,9 @@ local map = vim.keymap.set
 
 map({ "n", "v" }, "y", '"*y')
 map({ "n", "v" }, "Y", '"*Y')
-map({ "n" }, "p", '"*p')
-map({ "n" }, "P", '"*P')
+-- map({ "n" }, "p", '"*p')
+-- map({ "n" }, "<M-p>", '""p')
+-- map({ "n" }, "P", '"*P')
 
 map({ "n", "v" }, "d", '"_d')
 map({ "n", "v" }, "c", '"_c')
