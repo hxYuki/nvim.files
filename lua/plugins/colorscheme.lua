@@ -5,6 +5,7 @@
 
 return {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "rebelot/kanagawa.nvim", name = "kanagawa", priority = 1000 },
   {
     "Shatur/neovim-ayu",
     name = "ayu",
@@ -20,7 +21,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu-mirage",
+      colorscheme = "kanagawa",
     },
   },
 }
