@@ -10,12 +10,14 @@ return {
     "Shatur/neovim-ayu",
     name = "ayu",
 
-    opts = {
-      overrides = {
+    opts = function(_, opts)
+      opts.overrides = {
+
         Search = { bg = "None", fg = "#eed9ff" },
         WildMenu = { fg = "#ffffff" },
-      },
-    },
+      }
+    end,
+
     priority = 1000,
   },
   {
