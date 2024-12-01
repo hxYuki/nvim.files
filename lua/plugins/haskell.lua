@@ -7,6 +7,7 @@ vim.keymap.set("n", "<space>hl", vim.lsp.codelens.run, { desc = "Run code lenses
 
 return {
   "mrcjkb/haskell-tools.nvim",
+  ft = "haskell",
   keys = {
     -- { "<space>hl>", mode = {'n'}, action = ht.lsp.codelens.run, desc = "Run code lenses" },
     { "<space>hs", mode = { "n" }, ht.hoogle.hoogle_signature, desc = "Hoogle Signature" },

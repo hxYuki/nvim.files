@@ -21,5 +21,6 @@ let g:fsharp#fsi_keymap_toggle = "<C-`>"
 return {
   {
     "ionide/Ionide-vim",
+    ft = "fsharp",
   },
 }
