@@ -21,6 +21,7 @@ map({ "n", "x", "o" }, "f", function()
   require("flash").jump()
 end, { desc = "Flash" })
 
+map({ "n" }, "<leader>qd", ':lua require("persistence").stop()<CR> <BAR> :quitall<CR>')
 -- map({ "v" }, "<Tab>", "<Plug>luasnip-expand-snippet")
 -- --map({ "i" }, "<M-s>", "<Plug>luasnip-expand-snippet")
 -- map({ "i" }, "<M-s>", function()
