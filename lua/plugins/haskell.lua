@@ -13,5 +13,6 @@ return {
     { "<space>hs", mode = { "n" }, ht.hoogle.hoogle_signature, desc = "Hoogle Signature" },
     { "<space>ha", mode = { "n" }, ht.lsp.buf_eval_all, desc = "Evaluate All" },
     { "<space>hr", mode = { "n" }, ht.lsp.restart, desc = "Restart Lsp" },
+    { "<space>hp", mode = { "n" }, ":HsProjectCabal<CR>", desc = "Open Cabal file" },
   },
 }
