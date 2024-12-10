@@ -5,7 +5,18 @@
 
 return {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "rebelot/kanagawa.nvim", name = "kanagawa", priority = 1000 },
+  {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    priority = 1000,
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        float = "transparent",
+      },
+    },
+  },
   {
     "Shatur/neovim-ayu",
     name = "ayu",
