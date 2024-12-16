@@ -23,6 +23,15 @@ return {
 
     opts = function(_, opts)
       opts.overrides = {
+        Normal = { bg = "None" },
+        ColorColumn = { bg = "None" },
+        SignColumn = { bg = "None" },
+        Folded = { bg = "None" },
+        FoldColumn = { bg = "None" },
+        CursorLine = { bg = "None" },
+        CursorColumn = { bg = "None" },
+        WhichKeyFloat = { bg = "None" },
+        VertSplit = { bg = "None" },
 
         Search = { bg = "None", fg = "#eed9ff" },
         WildMenu = { fg = "#ffffff" },

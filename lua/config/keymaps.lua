@@ -16,6 +16,8 @@ map({ "n", "v" }, "c", '"_c')
 map({ "n", "v" }, "<M-d>", '"+d')
 map({ "n", "v" }, "<M-c>", '"+c', { remap = false })
 
+map({ "v" }, "<C-l>", "V", { remap = false })
+
 map({ "n", "v" }, "<C-a>", "ggVG")
 map({ "n", "x", "o" }, "f", function()
   require("flash").jump()
