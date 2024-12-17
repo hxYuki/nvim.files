@@ -18,6 +18,15 @@ return {
     },
   },
   {
+    "sho-87/kanagawa-paper.nvim",
+    name = "kanagawa-paper",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
+  {
     "Shatur/neovim-ayu",
     name = "ayu",
 
