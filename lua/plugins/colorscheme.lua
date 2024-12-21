@@ -4,7 +4,26 @@
 -- ]])
 
 return {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      transparent_background = true,
+      custom_highlights = function(colors)
+        return {
+          Function = { fg = "#96d1ff" },
+          -- Operator = { fg = colors.blue },
+          ["@parameter"] = { fg = "#caacc2" },
+          ["@variable.parameter"] = { fg = "#caacc2" },
+          -- ["@tag.attribute"] = { fg =  },
+          Type = { fg = "#d8c59e" },
+          -- Class = { fg = colors.pink },
+          ["@lsp.type.struct"] = { fg = "#84b6ae" },
+        }
+      end,
+    },
+  },
   {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
@@ -15,15 +34,13 @@ return {
         sidebars = "transparent",
         float = "transparent",
       },
-    },
-  },
-  {
-    "sho-87/kanagawa-paper.nvim",
-    name = "kanagawa-paper",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      transparent = true,
+      overrides = function(colors)
+        return {
+          ["@lsp.type.interface"] = { fg = "#97b997" },
+          ["@lsp.type.struct"] = { fg = "#77a7ac" },
+          ["@module"] = { fg = "#829596" },
+        }
+      end,
     },
   },
   {
