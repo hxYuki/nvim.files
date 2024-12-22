@@ -36,7 +36,7 @@ return {
       },
       overrides = function(colors)
         return {
-          StatusLine = { link = "Normal" },
+          StatusLine = { bg = colors.palette.sumiInk4 }, -- why this is Ink4 ? it should be Ink2
           ["@lsp.type.interface"] = { fg = "#97b997" },
           ["@lsp.type.struct"] = { fg = "#77a7ac" },
           ["@module"] = { fg = "#829596" },
