@@ -36,6 +36,7 @@ return {
       },
       overrides = function(colors)
         return {
+          StatusLine = { link = "Normal" },
           ["@lsp.type.interface"] = { fg = "#97b997" },
           ["@lsp.type.struct"] = { fg = "#77a7ac" },
           ["@module"] = { fg = "#829596" },
