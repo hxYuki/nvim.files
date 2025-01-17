@@ -4,10 +4,10 @@
 -- end, { desc = "accept_word", expr = true })
 
 return {
-  {
-    "zbirenbaum/copilot-cmp",
-    enabled = false,
-  },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   enabled = false,
+  -- },
   {
     "zbirenbaum/copilot.lua",
     opts = {
