@@ -9,7 +9,7 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      transparent_background = true,
+      -- transparent_background = true,
       custom_highlights = function(colors)
         return {
           Function = { fg = "#96d1ff" },
@@ -29,11 +29,11 @@ return {
     name = "kanagawa",
     priority = 1000,
     opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        float = "transparent",
-      },
+      -- transparent = true,
+      -- styles = {
+      --   sidebars = "transparent",
+      --   float = "transparent",
+      -- },
       overrides = function(colors)
         return {
           StatusLine = { bg = colors.palette.sumiInk4 }, -- why this is Ink4 ? it should be Ink2
@@ -51,15 +51,15 @@ return {
 
     opts = function(_, opts)
       opts.overrides = {
-        Normal = { bg = "None" },
-        ColorColumn = { bg = "None" },
-        SignColumn = { bg = "None" },
-        Folded = { bg = "None" },
-        FoldColumn = { bg = "None" },
-        CursorLine = { bg = "None" },
-        CursorColumn = { bg = "None" },
-        WhichKeyFloat = { bg = "None" },
-        VertSplit = { bg = "None" },
+        -- Normal = { bg = "None" },
+        -- ColorColumn = { bg = "None" },
+        -- SignColumn = { bg = "None" },
+        -- Folded = { bg = "None" },
+        -- FoldColumn = { bg = "None" },
+        -- CursorLine = { bg = "None" },
+        -- CursorColumn = { bg = "None" },
+        -- WhichKeyFloat = { bg = "None" },
+        -- VertSplit = { bg = "None" },
 
         Search = { bg = "None", fg = "#eed9ff" },
         WildMenu = { fg = "#ffffff" },
