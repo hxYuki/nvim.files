@@ -1,5 +1,5 @@
 if vim.fn.has("win32") == 1 then
-  return
+  return {}
 else
   return {
     "h-hg/fcitx.nvim",
