@@ -1,7 +1,7 @@
 vim.keymap.set({ "n", "v" }, "s", "<nop>")
 
 return {
-  "echasnovski/mini.surround",
+  "nvim-mini/mini.surround",
   opts = {
     mappings = {
       add = "ssa", -- Add surrounding in Normal and Visual modes
