@@ -2,6 +2,7 @@ vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 return {
   "chrisgrieser/nvim-origami",
+  vscode = true,
   event = "VeryLazy",
   opts = {
     foldKeyMaps = {

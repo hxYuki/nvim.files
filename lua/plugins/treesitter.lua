@@ -8,6 +8,7 @@ return {
     dependencies = {
       "HiPhish/rainbow-delimiters.nvim",
     },
+    vscode = true,
     -- keys = {
     --   { "v", desc = "Increment Selection" },
     --   { "V", desc = "Decrement Selection", mode = "x" },

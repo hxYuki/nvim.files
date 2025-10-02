@@ -1,6 +1,6 @@
--- if true then
---   return {}
--- end
+if vim.g.vscode ~= nil then
+  return {}
+end
 local fs = vim.fs
 local uv = vim.uv
 
@@ -13,6 +13,9 @@ vim.lsp.config("roslyn", {
     fs.joinpath(uv.os_tmpdir(), "roslyn_ls/logs"),
     "--stdio",
   },
+  on_attach = function()
+    print("roslyn started")
+  end,
   settings = {
     ["csharp|symbol_search"] = {
       dotnet_search_reference_assemblies = true,
@@ -50,17 +53,13 @@ vim.api.nvim_create_autocmd({
   end,
 })
 
--- require("conform").setup({
---   formatters_by_ft = {
---     csharp = {
---       csharpier = {
---         command = "C:\\Users\\Ixi\\AppData\\Local\\nvim-data\\mason\\bin\\csharpier.cmd",
---         args = { "--write-stdout", "$FILENAME" },
---         stdin = true,
---       },
---     },
---   },
--- })
+vim.api.nvim_create_autocmd("BufWritePre", {
+  group = vim.api.nvim_create_augroup("ConformFormatOnSave", { clear = true }),
+  pattern = "*.cs",
+  callback = function(args)
+    require("conform").format({ bufnr = args.buf, formatters = { "csharpier" } })
+  end,
+})
 
 return {
   {
@@ -75,10 +74,34 @@ return {
     },
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = { ensure_installed = { "c_sharp" } },
+  },
+  {
+    "mason-org/mason.nvim",
+    opts = { ensure_installed = { "csharpier", "netcoredbg" } },
+  },
+  {
+    "nvimtools/none-ls.nvim",
+    optional = true,
+    opts = function(_, opts)
+      local nls = require("null-ls")
+      opts.sources = opts.sources or {}
+      table.insert(opts.sources, nls.builtins.formatting.csharpier)
+    end,
+  },
+  {
     "stevearc/conform.nvim",
+    optional = true,
     opts = {
       formatters_by_ft = {
         cs = { "csharpier" },
+      },
+      formatters = {
+        csharpier = {
+          command = "C:\\Users\\Ixi\\AppData\\Local\\nvim-data\\mason\\bin\\csharpier.cmd",
+          -- args = { "--write-stdout" },
+        },
       },
     },
   },

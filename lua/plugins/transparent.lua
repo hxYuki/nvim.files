@@ -1,7 +1,7 @@
 return {
   "tribela/transparent.nvim",
   event = "VimEnter",
-  config = {
+  opts = {
     auto = false,
   },
 }

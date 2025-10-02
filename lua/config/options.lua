@@ -13,4 +13,7 @@ vim.o.wrap = true
 vim.o.showbreak = "↪"
 vim.o.linebreak = true
 vim.o.breakindent = true
-vim.o.breakindentopt = "shift:4,sbr"
+-- vim.o.breakindentopt = "shift:4,sbr"
+
+vim.o.autoindent = true
+vim.o.smartindent = true
