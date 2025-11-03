@@ -14,15 +14,6 @@ return {
     --   { "V", desc = "Decrement Selection", mode = "x" },
     -- },
     opts = function(_, opts)
-      -- opts.indent = { enable = true, disable = { "c_sharp" } }
-      -- opts.incremental_selection = {
-      --   enable = true,
-      --   keymaps = {
-      --     init_selection = "vv",
-      --     node_decremental = "V",
-      --     node_incremental = "v",
-      --   },
-      -- }
       opts.rainbow = {
         enable = true,
         query = "rainbow-delimiters",

@@ -5,7 +5,7 @@
 -- Set default intergrated shell
 
 if vim.fn.has("win32") == 1 then
-  vim.o.shell = '"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.5.2.0_x64__8wekyb3d8bbwe\\pwsh.exe"'
+  vim.o.shell = '"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.5.3.0_x64__8wekyb3d8bbwe\\pwsh.exe"'
 end
 
 -- Set wrap line
@@ -13,7 +13,10 @@ vim.o.wrap = true
 vim.o.showbreak = "↪"
 vim.o.linebreak = true
 vim.o.breakindent = true
--- vim.o.breakindentopt = "shift:4,sbr"
-
-vim.o.autoindent = true
-vim.o.smartindent = true
+vim.o.breakindentopt = "shift:4,sbr"
+-- vim.o.tabstop = 4
+-- vim.o.shiftwidth = 4
+-- vim.o.expandtab = true
+--
+-- vim.o.autoindent = true
+-- vim.o.smartindent = true

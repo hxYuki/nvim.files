@@ -37,10 +37,11 @@ return {
       overrides = function(colors)
         return {
           StatusLine = { bg = colors.palette.sumiInk4 }, -- why this is Ink4 ? it should be Ink2
-          ["@lsp.type.class"] = { fg = "#76a99f" },
-          ["@lsp.type.interface"] = { fg = "#a1b18d" },
-          ["@lsp.type.struct"] = { fg = "#7cab7d" },
-          ["@lsp.type.enum"] = { fg = "#8fa76f" },
+          ["@lsp.type.class.cs"] = { fg = "#76a99f" },
+          ["@lsp.type.recordClass.cs"] = { fg = "#76a99f" },
+          ["@lsp.type.interface.cs"] = { fg = "#a1b18d" },
+          ["@lsp.type.struct.cs"] = { fg = "#7cab7d" },
+          ["@lsp.type.enum.cs"] = { fg = "#8fa76f" },
           ["@module"] = { fg = "#829596" },
           Visual = { bg = "#59516c" },
         }
