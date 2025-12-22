@@ -5,7 +5,7 @@
 -- Set default intergrated shell
 
 if vim.fn.has("win32") == 1 then
-  vim.o.shell = '"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.5.3.0_x64__8wekyb3d8bbwe\\pwsh.exe"'
+  vim.o.shell = '"pwsh"'
 end
 
 -- Set wrap line
