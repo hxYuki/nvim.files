@@ -42,6 +42,7 @@ return {
           ["@lsp.type.interface.cs"] = { fg = "#a1b18d" },
           ["@lsp.type.struct.cs"] = { fg = "#7cab7d" },
           ["@lsp.type.enum.cs"] = { fg = "#8fa76f" },
+          ["@lsp.type.field.cs"] = { fg = "#e6c384" },
           ["@module"] = { fg = "#829596" },
           Visual = { bg = "#59516c" },
         }
