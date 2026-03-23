@@ -45,6 +45,10 @@ return {
           ["@lsp.type.field.cs"] = { fg = "#e6c384" },
           ["@module"] = { fg = "#829596" },
           Visual = { bg = "#59516c" },
+
+          -- rust colors
+          ["@lsp.type.formatSpecifier"] = { link = "@markup.list" },
+          ["@lsp.type.variable.rust"] = { link = "@variable" },
         }
       end,
     },

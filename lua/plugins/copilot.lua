@@ -11,7 +11,7 @@ return {
   {
     "zbirenbaum/copilot.lua",
     opts = {
-      copilot_node_command = "/home/yuki/.nvm/versions/node/v24.6.0/bin/node",
+      -- copilot_node_command = "/home/yuki/.nvm/versions/node/v24.6.0/bin/node",
       suggestion = {
         enabled = true,
         auto_trigger = true,
