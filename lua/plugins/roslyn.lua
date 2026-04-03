@@ -28,15 +28,15 @@ return {
       },
     },
   },
-  {
-    "nvimtools/none-ls.nvim",
-    optional = true,
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      opts.sources = opts.sources or {}
-      table.insert(opts.sources, nls.builtins.formatting.csharpier)
-    end,
-  },
+  -- {
+  --   "nvimtools/none-ls.nvim",
+  --   optional = true,
+  --   opts = function(_, opts)
+  --     local nls = require("null-ls")
+  --     opts.sources = opts.sources or {}
+  --     table.insert(opts.sources, nls.builtins.formatting.csharpier)
+  --   end,
+  -- },
   {
     "stevearc/conform.nvim",
     optional = true,
@@ -44,12 +44,11 @@ return {
       formatters_by_ft = {
         cs = { "csharpier" },
       },
-      formatters = {
-        csharpier = {
-          command = "C:\\Users\\Ixi\\AppData\\Local\\nvim-data\\mason\\bin\\csharpier.cmd",
-          -- args = { "--write-stdout" },
-        },
-      },
+      -- formatters = {
+      --   csharpier = {
+      --     command = "C:\\Users\\Ixi\\AppData\\Local\\nvim-data\\mason\\bin\\csharpier.cmd",
+      --   },
+      -- },
     },
   },
 }
