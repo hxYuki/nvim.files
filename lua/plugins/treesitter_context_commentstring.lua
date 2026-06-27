@@ -33,6 +33,7 @@ return {
       c_sharp = { __default = "// %s", __multiline = "/* %s */" },
       -- fsharp not available for lack of ts_parser
       fsharp = { __default = "// %s", __multiline = "(* %s *)" },
+      wgsl = { __default = "// %s", __multiline = "/* %s */" },
     },
   },
   init = function()

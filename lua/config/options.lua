@@ -15,6 +15,7 @@ vim.o.linebreak = true
 vim.o.breakindent = true
 vim.o.breakindentopt = "shift:4,sbr"
 vim.o.mousescroll = "ver:1"
+vim.o.ttimeoutlen = 150
 -- vim.o.tabstop = 4
 -- vim.o.shiftwidth = 4
 -- vim.o.expandtab = true
