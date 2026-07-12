@@ -4,11 +4,36 @@ return {
     ft = { "rust" },
     opts = {
       server = {
+        cmd_env = {
+          PATH = "/home/yuki/.local/bin:" .. (vim.env.PATH or ""),
+          CARGO_TARGET_TMPFS_FORCE = "1",
+        },
         default_settings = {
           ["rust-analyzer"] = {
-            checkOnSave = {
+            cargo = {
+              extraEnv = {
+                PATH = "/home/yuki/.local/bin:" .. (vim.env.PATH or ""),
+                CARGO_TARGET_TMPFS_FORCE = "1",
+              },
+              buildScripts = {
+                overrideCommand = {
+                  "/home/yuki/.local/bin/cargo",
+                  "check",
+                  "--quiet",
+                  "--workspace",
+                  "--message-format=json",
+                  "--all-targets",
+                  "--keep-going",
+                },
+              },
+            },
+            check = {
+              extraEnv = {
+                PATH = "/home/yuki/.local/bin:" .. (vim.env.PATH or ""),
+                CARGO_TARGET_TMPFS_FORCE = "1",
+              },
               overrideCommand = {
-                "cargo",
+                "/home/yuki/.local/bin/cargo",
                 "clippy",
                 "--workspace",
                 "--message-format=json",
