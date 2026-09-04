@@ -17,7 +17,7 @@ return {
               },
               buildScripts = {
                 overrideCommand = {
-                  "/home/yuki/.local/bin/cargo",
+                  "cargo",
                   "check",
                   "--quiet",
                   "--workspace",
@@ -33,7 +33,7 @@ return {
                 CARGO_TARGET_TMPFS_FORCE = "1",
               },
               overrideCommand = {
-                "/home/yuki/.local/bin/cargo",
+                "cargo",
                 "clippy",
                 "--workspace",
                 "--message-format=json",
