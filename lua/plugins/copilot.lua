@@ -4,10 +4,10 @@
 -- end, { desc = "accept_word", expr = true })
 
 return {
-  {
-    "zbirenbaum/copilot-cmp",
-    enabled = false,
-  },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   enabled = false,
+  -- },
   {
     "zbirenbaum/copilot.lua",
     opts = {
@@ -20,6 +20,18 @@ return {
         },
       },
     },
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    opts = function()
+      LazyVim.cmp.actions.ai_accept = function()
+        if require("copilot.suggestion").is_visible() then
+          LazyVim.create_undo()
+          require("copilot.suggestion").accept()
+          return true
+        end
+      end
+    end,
   },
   -- {
   --   "saghen/blink.cmp",

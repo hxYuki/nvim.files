@@ -1,19 +1,30 @@
-if true then
-  return {}
-end
-
-vim.keymap.set({ "n", "v" }, "s", "<nop>")
-
 return {
   "nvim-mini/mini.surround",
+  keys = {
+    {
+      "sd",
+      "<Esc>sd",
+      mode = "x",
+      remap = true,
+      desc = "删除包围符",
+    },
+    {
+      "sr",
+      "<Esc>sr",
+      mode = "x",
+      remap = true,
+      desc = "替换包围符",
+    },
+  },
   opts = {
+    n_lines = 100,
     mappings = {
-      add = "ssa", -- Add surrounding in Normal and Visual modes
+      add = "sa", -- Add surrounding in Normal and Visual modes
       delele = "sd", -- Delete surrounding
-      find = "ssf", -- Find surrounding (to the right)
-      find_left = "ssF", -- Find surrounding (to the left)
-      highlight = "ssh", -- Highlight surrounding
-      replace = "ssr", -- Replace surrounding
+      replace = "sr", -- Replace surrounding
+      find = "sf", -- Find surrounding (to the right)
+      find_left = "sF", -- Find surrounding (to the left)
+      highlight = "sh", -- Highlight surrounding
       update_n_lines = "ssn",
     },
   },
