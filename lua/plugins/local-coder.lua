@@ -8,7 +8,7 @@ return {
     opts = {
       provider = "openai_fim_compatible",
       n_completions = 1,
-      context_window = 4096, -- characters, not tokens
+      context_window = 8192, -- characters, not tokens
       debounce = 300,
       throttle = 800,
       request_timeout = 10,
